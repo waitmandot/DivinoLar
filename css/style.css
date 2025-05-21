@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 0 1.5rem;
     height: 150px;
-    background-color: #F9E8D9;
+    background-color: #F7E8DC;
 }
 
 .header-left {
@@ -48,6 +48,7 @@ header {
 }
 
 .menu-top nav {
+    color: #3A2A1F;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -56,7 +57,7 @@ header {
 
 .menu-top a {
     text-decoration: none;
-    color: #333;
+    color: #3A2A1F;
     padding: 0 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -67,7 +68,7 @@ header {
 }
 
 .menu-top nav span {
-    color: #333;
+    color: #3A2A1F;
     font-size: 2rem;
 }
 
@@ -79,6 +80,7 @@ header {
 }
 
 .contact-itens {
+    color: #3A2A1F;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -109,7 +111,7 @@ header {
 }
 
 .contact-button {
-    background-color: #333;
+    background-color: #3A2A1F;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
