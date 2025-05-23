@@ -1,3 +1,6 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -139,4 +142,36 @@ footer {
 
 main {
     text-align: center;
+}
+
+/* Seção de destaque */
+
+.hero-section {
+    box-sizing: border-box;
+    border: 5px solid #3A2A1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35.45rem;
+    background-color: #FFFFFF;
+
+}
+
+.hero-section-strong {
+    font-size: 3.12rem;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C44E28;
+}
+
+.hero-section-text {
+    font-size: 2.5rem;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C44E28;
+    width: 50.4rem;
+    height: 24.3rem;
 }
