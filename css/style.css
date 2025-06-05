@@ -15,7 +15,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
-    height: 150px;
+    height: 130px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     background-color: #F7E8DC;
 }
 
@@ -23,11 +25,17 @@ header {
     display: inline-flex;
     align-items: center;
     height: 100%;
+    gap: 30px;
 }
 
 .logo {
     height: 100%;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+    object-fit: contain;
+}
+
+.idosos-logo {
+    height: 100%;
     object-fit: contain;
 }
 
@@ -75,6 +83,7 @@ header {
     font-size: 2rem;
 }
 
+/* Email e telefone */
 .contact-info {
     display: flex;
     height: 50%;
@@ -105,12 +114,25 @@ header {
     text-align: center;
 }
 
-.button-div,
+.button-div {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
 .social-media {
     display: flex;
     height: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.social-icon {
+    height: 40px;
+    width: auto;
+    margin: 0 5px;
+    vertical-align: middle;
 }
 
 .contact-button {
