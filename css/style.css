@@ -9,6 +9,10 @@
     font-family: 'Brawler', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
     position: relative;
     display: flex;
@@ -26,6 +30,7 @@ header {
     align-items: center;
     height: 100%;
     gap: 30px;
+    cursor: pointer;
 }
 
 .logo {
