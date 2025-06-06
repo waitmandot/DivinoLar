@@ -1,5 +1,5 @@
 /* Importação de fontes */
-@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Julius+Sans+One&display=swap');
 
 /* Reset básico */
 * {
@@ -202,3 +202,62 @@ main {
     width: 50.4rem;
     height: 24.3rem;
 }
+
+.about {
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7E8DC;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title-text {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5rem;
+    text-shadow: #a9a9a9 0px 5px 3px;
+    color: #3A2A1F;
+}
+
+.about-line {
+    border: #3A2A1F 1px solid;
+    width: 35rem;
+}
+
+.about-images {
+    display: flex;
+    gap: 5rem;
+}
+
+.about-text {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text-p {
+    font-family: "Inika", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    max-width: 40rem;
+}
+
+.about-text-line {
+    border: #3A2A1F 1px solid;
+    width: 40rem;
+}
+
