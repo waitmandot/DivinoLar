@@ -360,3 +360,108 @@ main {
 .saiba-mais-button:hover {
     background-color: #555;
 }
+
+/* Seção Carrossel */
+
+.carousel {
+    box-sizing: border-box;
+    border: 5px solid #3A2A1F;
+    background-color: #FFFFFF;
+    padding: 2rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 700px;
+}
+
+.carousel-slide {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.carousel-arrow {
+    background: #fff;
+    color: #3A2A1F;
+    border: 4px solid #3A2A1F;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    font-size: 2.2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    outline: none;
+    padding: 0;
+    position: relative;
+}
+
+.carousel-arrow-icon {
+    position: relative;
+    top: -3px;
+}
+
+.carousel-arrow:hover {
+    background: #F7E8DC;
+    color: #C44F24;
+    border-color: #C44F24;
+}
+
+.carousel-gallery-button {
+    min-width: 300px;
+    height: 56px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    border-radius: 8px;
+    background-color: #3A2A1F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.carousel-gallery-button:hover {
+    background-color: #C44F24;
+}
+
+/* Rodapé */
+
+footer {
+    height: 200px;
+    max-width: 100vw;
+    width: 100%;
+    background-color: #C44F24;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
