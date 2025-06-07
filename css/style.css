@@ -143,6 +143,8 @@ header {
 .contact-button {
     background-color: #3A2A1F;
     color: white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 8px;
@@ -203,6 +205,8 @@ main {
     height: 24.3rem;
 }
 
+/* Seção sobre */
+
 .about {
     padding: 2.25rem;
     display: flex;
@@ -227,7 +231,7 @@ main {
     color: #3A2A1F;
 }
 
-.about-line {
+.line {
     border: #3A2A1F 1px solid;
     width: 35rem;
 }
@@ -250,11 +254,13 @@ main {
 
 .about-text-p {
     font-family: "Inika", serif;
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
     font-size: 1.5rem;
     max-width: 40rem;
     color: #3A2A1F;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-text-line {
@@ -262,3 +268,95 @@ main {
     width: 40rem;
 }
 
+/* Seção serviços */
+
+.services {
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7E8DC;
+    gap: 3rem;
+    align-items: center;
+}
+
+.service-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-title-text {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    text-shadow: #a9a9a9 0px 5px 3px;
+    color: #3A2A1F;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services-listas-centro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+    min-height: 12rem;
+}
+
+.services-lista-coluna {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 0;
+    padding: 0 2rem;
+}
+
+.services-lista-separador {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #3A2A1F;
+    border: none;
+    z-index: 1;
+    margin: 0;
+    min-height: 10rem;
+}
+
+.services-lista-coluna ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.services-lista-coluna li {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A2A1F;
+    text-align: left;
+}
+
+.saiba-mais-button {
+    min-width: 500px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    border-radius: 8px;
+    background-color: #3A2A1F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+.saiba-mais-button:hover {
+    background-color: #555;
+}
