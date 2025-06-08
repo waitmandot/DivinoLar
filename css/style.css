@@ -203,6 +203,10 @@ main {
     color: #C44E28;
     width: 50.4rem;
     height: 24.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Seção sobre */
@@ -426,27 +430,37 @@ main {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #C44F24;
+    background-color: #555;
 }
 
 /* Estilo do botão da galeria */
 .carousel-gallery-button {
-    min-width: 300px;
-    height: 56px;
-    font-size: 1.2rem;
+    min-width: 500px;
+    height: 70px;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     border-radius: 8px;
     background-color: #3A2A1F;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 32px;
 }
 
 .carousel-gallery-button:hover {
-    background-color: #C44F24;
+    background-color: #555;
+}
+
+.carousel-arrow-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: filter 0.2s;
 }
 
 /* Rodapé */
