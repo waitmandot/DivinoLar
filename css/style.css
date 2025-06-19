@@ -801,3 +801,112 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Página de acomodações */
+
+.section-environment {
+    border: solid 5px #3A2A1F;
+}
+
+.accommodations-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 1rem;
+    gap: 4rem;
+    flex-wrap: wrap-reverse;
+}
+
+.accommodations-text {
+    width: 45%;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C44E28;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.accommodations-text-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.accommodations-text-paragraph{
+    font-size: 2rem;
+}
+
+.acomodacoes-image {
+    height: 50%;
+}
+
+.acomodacoes-image-mobile {
+    display: none;
+}
+
+.content-care {
+    background-color: #F7E8DC;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-care {
+    color: #3A2A1F;
+}
+
+.activities {
+    border:solid 5px #3A2A1F;
+}
+
+.activities-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem 3rem 2rem;
+    gap: 4rem;
+}
+
+.activities-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #C44E28;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C44E28;
+    gap: 3rem;
+}
+
+.activities-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.active-icon {
+    border: solid 6px #a9a9a9;
+    border-radius: 100%;
+    height: 8rem;
+    width: 8rem;
+}
+
+.icon-acolhimento:hover {
+    border: solid 6px #87CEFA;
+    transition: border 0.5s ease;
+}
+
+.icon-saude:hover {
+    border: solid 6px #E96656;
+    transition: border 0.5s ease;
+}
+
+.icon-lazer:hover {
+    border: solid 6px #81F1B4;
+    transition: border 0.5s ease;
+}
+
+.activities-text {
+    font-size: 2rem;
+}
