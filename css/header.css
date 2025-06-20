@@ -1,0 +1,165 @@
+/* ==========================================================================
+   HEADER STYLES
+   ========================================================================== */
+
+/* Header Container */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1.5rem;
+    height: 130px;
+    background-color: #F7E8DC;
+}
+
+/* Header Left Section - Logo Area */
+.header-left {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.header-left a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-left a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Logo Styles */
+.logo {
+    height: 100%;
+    padding: 0.5rem 0;
+    object-fit: contain;
+}
+
+.idosos-logo {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Header Center Section - Navigation and Contact */
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Navigation Menu */
+.menu-top {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-top nav {
+    color: #3A2A1F;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: default;
+}
+
+.menu-top a {
+    text-decoration: none;
+    color: #3A2A1F;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-top a:hover {
+    color: #555;
+}
+
+.menu-top nav span {
+    color: #3A2A1F;
+    font-size: 2rem;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-itens {
+    color: #3A2A1F;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+.icon { 
+    height: 40px;
+    width: auto;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+/* Header Right Section - Button and Social Media */
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.button-div {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 40px;
+    width: auto;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+/* Contact Button */
+.contact-button {
+    background-color: #3A2A1F;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}

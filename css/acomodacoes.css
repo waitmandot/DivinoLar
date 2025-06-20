@@ -1,0 +1,151 @@
+/* ==========================================================================
+   ACCOMMODATIONS PAGE STYLES
+   ========================================================================== */
+
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Julius+Sans+One&display=swap');
+
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Brawler', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+main {
+    text-align: center;
+}
+
+/* ==========================================================================
+   ENVIRONMENT SECTION
+   ========================================================================== */
+
+.section-environment {
+    border: solid 5px #3A2A1F;
+}
+
+/* Accommodations Content */
+.accommodations-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 4rem;
+    flex-wrap: wrap-reverse;
+}
+
+.accommodations-text {
+    width: 45%;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C44E28;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.accommodations-text-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.accommodations-text-paragraph {
+    font-size: 2rem;
+}
+
+/* Accommodations Images */
+.acomodacoes-image {
+    height: 50%;
+}
+
+.acomodacoes-image-mobile {
+    display: none;
+}
+
+/* ==========================================================================
+   CARE SECTION
+   ========================================================================== */
+
+.content-care {
+    background-color: #F7E8DC;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-care {
+    color: #3A2A1F;
+}
+
+/* ==========================================================================
+   ACTIVITIES SECTION
+   ========================================================================== */
+
+.activities {
+    border: solid 5px #3A2A1F;
+}
+
+.activities-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem 3rem 2rem;
+    gap: 4rem;
+}
+
+/* Activities Items */
+.activities-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #C44E28;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    gap: 3rem;
+}
+
+.activities-title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.activities-text {
+    font-size: 2rem;
+}
+
+/* Activity Icons */
+.active-icon {
+    border: solid 6px #a9a9a9;
+    border-radius: 100%;
+    height: 8rem;
+    width: 8rem;
+}
+
+/* Icon Hover Effects */
+.icon-acolhimento:hover {
+    border: solid 6px #87CEFA;
+    transition: border 0.5s ease;
+}
+
+.icon-saude:hover {
+    border: solid 6px #E96656;
+    transition: border 0.5s ease;
+}
+
+.icon-lazer:hover {
+    border: solid 6px #81F1B4;
+    transition: border 0.5s ease;
+}
