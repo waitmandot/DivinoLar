@@ -328,18 +328,26 @@ main {
 .carousel-wrapper {
     display: flex;
     align-items: center;
-    width: 30%;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px; /* Aumentado de 1000px para 1200px */
     position: relative;
+    gap: 4rem; /* Aumentado de 3rem para 4rem */
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
+    width: 700px; /* Aumentado de 550px para 700px */
+    height: 500px; /* Aumentado de 400px para 500px */
+    border-radius: 15px; /* Aumentado de 12px para 15px */
+    border: 3px solid #3A2A1F;
+    overflow: hidden;
 }
 
 .carousel-inner {
     width: 100%;
     height: 100%;
+    border-radius: 12px; /* Ajustado proporcionalmente */
+    overflow: hidden;
 }
 
 .carousel-item {
@@ -352,33 +360,68 @@ main {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 0;
 }
 
-/* Carousel Controls */
+/* Carousel Controls - Botões maiores e redondos */
 .carousel-control-prev,
 .carousel-control-next {
-    position: relative;
-    width: auto;
-    margin: -5rem;
-    background: none;
-    border: none;
-    z-index: 1;
+    position: static;
+    width: 90px; /* Aumentado de 70px para 90px */
+    height: 90px; /* Aumentado de 70px para 90px */
+    margin: 0;
+    background: rgba(58, 42, 31, 0.1);
+    border: 3px solid #3A2A1F; /* Aumentado de 2px para 3px */
+    border-radius: 50%; /* Mantém perfeitamente redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(58, 42, 31, 0.2);
+    transform: scale(1.1);
+    border-color: #2A1A0F; /* Escurece a borda no hover */
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active,
+.carousel-control-prev:focus:active,
+.carousel-control-next:focus:active {
+    background: rgba(58, 42, 31, 0.1) !important;
+    transform: none !important;
+    transition: all 0.1s ease;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #3A2A1F;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #555;
+.carousel-arrow-img {
+    width: 45px; /* Aumentado de 36px para 45px */
+    height: 45px; /* Aumentado de 36px para 45px */
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    pointer-events: none;
+}
+
+.carousel-control-prev:hover .carousel-arrow-img,
+.carousel-control-next:hover .carousel-arrow-img {
+    filter: brightness(1.2);
 }
 
 /* Carousel Gallery Button */
@@ -401,12 +444,112 @@ main {
     background-color: #555;
 }
 
-.carousel-arrow-img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: filter 0.2s;
+/* Responsividade do Carousel */
+@media (max-width: 1200px) {
+    .carousel-wrapper {
+        gap: 3rem;
+        max-width: 95%;
+    }
+    
+    .carousel {
+        width: 600px; /* Tamanho intermediário */
+        height: 450px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .carousel-arrow-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-wrapper {
+        gap: 2.5rem;
+        max-width: 95%;
+    }
+    
+    .carousel {
+        width: 500px; /* Tamanho para tablet grande */
+        height: 375px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .carousel-arrow-img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        gap: 2rem;
+        max-width: 95%;
+    }
+    
+    .carousel {
+        width: 420px; /* Maior para tablet */
+        height: 315px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .carousel-arrow-img {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .carousel-gallery-button {
+        min-width: 300px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .carousel {
+        width: 350px; /* Maior para mobile */
+        height: 260px;
+        order: 2;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: static;
+        order: 1;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .carousel-control-next {
+        order: 3;
+    }
+    
+    .carousel-arrow-img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .carousel-gallery-button {
+        min-width: 250px;
+        font-size: 1rem;
+    }
 }
