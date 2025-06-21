@@ -41,6 +41,7 @@ main {
     min-height: 35.45rem;
     padding: 3rem 2rem;
     background-color: #FFFFFF;
+    gap: 1rem;
 }
 
 .hero-section-strong {
@@ -67,12 +68,28 @@ main {
     text-align: center;
 }
 
+.hero-section-img {
+    width: 33rem;
+}
+
 /* Hero Section Responsive Design */
 @media (max-width: 992px) {
-    .hero-section-text {
-        font-size: 2.2rem;
-        width: 100%;
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 2rem 1rem;
     }
+
+    .hero-section-text {
+        font-size: 1.5rem;
+        min-height: auto;
+    }
+
+    .hero-section-img {
+        width: 20rem;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -89,6 +106,10 @@ main {
     .hero-section-text {
         font-size: 1.5rem;
         min-height: auto;
+    }
+
+    .hero-section-img {
+        width: 60%;
     }
 }
 

@@ -42,7 +42,6 @@ main {
     justify-content: center;
     padding: 2rem 1rem;
     gap: 4rem;
-    flex-wrap: wrap-reverse;
 }
 
 .accommodations-text {
@@ -81,7 +80,6 @@ main {
 .content-care {
     background-color: #F7E8DC;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .text-care {
@@ -148,4 +146,51 @@ main {
 .icon-lazer:hover {
     border: solid 6px #81F1B4;
     transition: border 0.5s ease;
+}
+
+@media (max-width: 992px) {
+    .accommodations-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accommodations-text {
+        width: 90%;
+    }
+
+    .acomodacoes-image {
+        display: none;
+    }
+
+    .acomodacoes-image-mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .activities-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .accommodations-text-title {
+    font-weight: 700;
+    font-size: 2rem;
+    }
+
+    .accommodations-text-paragraph {
+    font-size: 1.5rem;
+    }
+
+    .activities-title {
+        font-size: 2rem;
+    }
+
+    .activities-text {
+        font-size: 1.5rem;
+    }
+
+
 }
