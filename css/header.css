@@ -163,3 +163,90 @@ header {
 .contact-button:hover {
     background-color: #555;
 }
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .header-left {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .logo, .idosos-logo {
+    height: 70px;
+  }
+
+  .header-center {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu-top nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .contact-itens {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-div,
+  .social-media {
+    justify-content: center;
+    margin: 5px 0;
+  }
+
+  .contact-button {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-top nav span {
+    display: none;
+  }
+
+  .menu-top a {
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .contact-itens {
+    font-size: 0.9rem;
+  }
+
+  .icon, .social-icon {
+    height: 30px;
+  }
+
+  .logo, .idosos-logo {
+    height: 60px;
+  }
+}
