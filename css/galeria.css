@@ -40,7 +40,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 35.45rem;
+    min-height: 25rem;
     padding: 3rem 2rem;
     background-color: #FFFFFF;
     margin: 0;
@@ -58,7 +58,7 @@ main {
     background-color: #F7E8DC;
     gap: 3rem;
     align-items: center;
-    min-height: 35.45rem;
+    min-height: 25rem;
     justify-content: center;
     margin: 0;
 }
@@ -85,7 +85,7 @@ main {
 .photo-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     gap: 2rem;
     width: 100%;
     max-width: 1200px;
@@ -94,7 +94,7 @@ main {
 
 .photo-item {
     width: 100%;
-    height: 200px;
+    height: 250px;
     border-radius: 12px;
     overflow: hidden;
     border: 3px solid #3A2A1F;
@@ -123,17 +123,17 @@ main {
    GALLERY RESPONSIVE DESIGN
    ========================================================================== */
 
-/* Tablets - 3 columns */
+/* Tablets - 2 columns */
 @media (max-width: 992px) {
     .photo-group {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 1.5rem;
-        max-width: 900px;
+        max-width: 600px;
     }
     
     .photo-item {
-        height: 180px;
+        height: 200px;
     }
     
     .events-title {
@@ -143,14 +143,14 @@ main {
     .events-section,
     .birthdays-section {
         padding: 2rem 1.5rem;
-        min-height: 30rem;
+        min-height: 22rem;
     }
     
     .daily-life-section,
     .others-section {
         padding: 2rem;
         gap: 2rem;
-        min-height: 30rem;
+        min-height: 22rem;
     }
 }
 
@@ -158,12 +158,13 @@ main {
 @media (max-width: 768px) {
     .photo-group {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
-        max-width: 600px;
+        max-width: 500px;
     }
     
     .photo-item {
-        height: 150px;
+        height: 180px;
     }
     
     .events-title {
@@ -174,14 +175,14 @@ main {
     .events-section,
     .birthdays-section {
         padding: 1.5rem 1rem;
-        min-height: 25rem;
+        min-height: 20rem;
     }
     
     .daily-life-section,
     .others-section {
         padding: 1.5rem;
         gap: 1.5rem;
-        min-height: 25rem;
+        min-height: 20rem;
     }
 }
 
@@ -189,6 +190,7 @@ main {
 @media (max-width: 480px) {
     .photo-group {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
         gap: 1rem;
         max-width: 300px;
     }
@@ -205,14 +207,14 @@ main {
     .events-section,
     .birthdays-section {
         padding: 1rem;
-        min-height: 20rem;
+        min-height: auto;
     }
     
     .daily-life-section,
     .others-section {
         padding: 1rem;
         gap: 1rem;
-        min-height: 20rem;
+        min-height: auto;
     }
 }
 

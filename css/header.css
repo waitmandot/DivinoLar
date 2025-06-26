@@ -164,6 +164,26 @@ header {
     background-color: #555;
 }
 
+/* Media query para esconder logo dos idosos e ajustar fonte do menu */
+@media (max-width: 1330px) and (min-width: 1025px) {
+  .idosos-logo {
+    display: none;
+  }
+  
+  .menu-top a {
+    font-size: calc(1.2rem + (1.5 - 1.2) * ((100vw - 1025px) / (1330 - 1025)));
+  }
+  
+  .menu-top nav span {
+    font-size: calc(1.6rem + (2 - 1.6) * ((100vw - 1025px) / (1330 - 1025)));
+  }
+
+  .contact-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1024px) {
   header {
     flex-direction: column;

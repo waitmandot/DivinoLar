@@ -218,6 +218,10 @@ main {
     .about-text-p {
         font-size: 1.3rem;
     }
+    
+    .about-title-text {
+        font-size: 3.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -228,6 +232,43 @@ main {
     .line, .about-text-line {
         width: 90%;
         max-width: 90%;
+    }
+    
+    .about-title-text {
+        font-size: 3rem;
+    }
+    
+    .about-images {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title-text {
+        font-size: 2.5rem;
+    }
+    
+    .about-images {
+        gap: 2rem;
+    }
+    
+    .about-images img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 1.5rem 1rem;
+        gap: 2rem;
+    }
+    
+    .about-title-text {
+        font-size: 2rem;
+    }
+    
+    .about-images {
+        gap: 1.5rem;
     }
 }
 
@@ -328,6 +369,127 @@ main {
 
 .saiba-mais-button:hover {
     background-color: #555;
+}
+
+/* Services Section Responsive Design */
+@media (max-width: 992px) {
+    .services-listas-centro {
+        flex-direction: column;
+        gap: 0;
+        max-width: 90%;
+        min-height: auto;
+    }
+    
+    .services-lista-coluna {
+        padding: 0 1rem;
+        width: 100%;
+    }
+    
+    .services-lista-coluna ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .services-lista-separador {
+        display: none;
+    }
+    
+    .services-lista-coluna li {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .saiba-mais-button {
+        min-width: 400px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-listas-centro {
+        gap: 0;
+        max-width: 95%;
+    }
+    
+    .services-lista-coluna {
+        padding: 0 0.5rem;
+    }
+    
+    .services-lista-coluna li {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .service-title-text {
+        font-size: 2.5rem;
+    }
+    
+    .saiba-mais-button {
+        min-width: 300px;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-listas-centro {
+        gap: 0;
+        margin: 1rem auto 0 auto;
+    }
+    
+    .services-lista-coluna {
+        padding: 0;
+    }
+    
+    .services-lista-coluna ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+    
+    .services-lista-coluna li {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+        text-align: center;
+    }
+    
+    .service-title-text {
+        font-size: 2rem;
+    }
+    
+    .saiba-mais-button {
+        min-width: 250px;
+        height: 55px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        padding: 1.5rem 1rem;
+        gap: 2rem;
+    }
+    
+    .services-lista-coluna ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .services-lista-coluna li {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .service-title-text {
+        font-size: 1.8rem;
+    }
+    
+    .saiba-mais-button {
+        min-width: 200px;
+        height: 50px;
+        font-size: 1rem;
+    }
 }
 
 /* ==========================================================================
@@ -538,6 +700,11 @@ main {
         min-width: 300px;
         font-size: 1.2rem;
     }
+
+    .contact-button.saiba-mais-button {
+        min-width: 300px;
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -570,6 +737,11 @@ main {
     }
     
     .carousel-gallery-button {
+        min-width: 250px;
+        font-size: 1rem;
+    }
+
+    .contact-button.saiba-mais-button {
         min-width: 250px;
         font-size: 1rem;
     }
