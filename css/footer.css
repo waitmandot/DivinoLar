@@ -153,6 +153,10 @@ footer {
     font-size: 0.95rem;
 }
 
+.phone-number {
+    text-decoration: none;
+}
+
 /* Social Media Section */
 .social-media-footer {
     flex: 1;

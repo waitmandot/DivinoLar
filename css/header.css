@@ -228,6 +228,7 @@ header {
     flex-direction: column;
     gap: 10px;
     font-size: 1rem;
+    text-decoration: none;
   }
 
   .contact-info {
